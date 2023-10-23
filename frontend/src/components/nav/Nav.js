@@ -3,7 +3,7 @@ import React from 'react';
 
 const Nav = () => {
     return (
-      <nav>
+        <div className=''>
         <ul>
           <li>
             <a href="/">Inicio</a>
@@ -18,7 +18,7 @@ const Nav = () => {
             <a href="/contacto">Contacto</a>
           </li>
         </ul>
-      </nav>
+        </div>
     );
   };
   

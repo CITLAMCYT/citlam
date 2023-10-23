@@ -4,7 +4,9 @@ import { Nav } from './components/index.js'
 function App() {
   return (
     <head>
-      <Nav/>  
+      <nav>
+        <Nav/>
+      </nav> 
     </head>
     
   );
