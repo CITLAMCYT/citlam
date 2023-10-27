@@ -5,6 +5,7 @@ const App = () => {
   return (
     <div>
       <Nav />
+      <div/>
       <Footer />
     </div>
   );

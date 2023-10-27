@@ -3,6 +3,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-solid-svg-icons';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -36,10 +37,12 @@ const Footer = () => {
             <h4>Síguenos</h4>
             <div className="social-links">
               <FontAwesomeIcon icon={faPhone} /> {/* Icono de teléfono */}
-             
             </div>
           </div>
         </div>
+      </div>
+      <div className="copyright">
+        Derechos Reservados A CITLAM
       </div>
     </footer>
   );
