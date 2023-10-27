@@ -1,13 +1,18 @@
+import React from 'react';
 import './App.css';
 import { Nav, Footer } from './components/index.js';
 
 const App = () => {
   return (
-    <div>
-      <Nav />
-      <div/>
-      <Footer />
-    </div>
+    <>
+      <header>
+        <Nav />
+      </header>
+        
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
