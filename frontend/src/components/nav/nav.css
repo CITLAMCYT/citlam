@@ -67,7 +67,7 @@
   display: none;
   border-radius: 0 0 8px 8px ;
   left: 0;
-  width: 9.4rem;
+  width: 10.4rem;
   animation-name: aparecer;
   animation-duration: 1s;
   animation-timing-function:  ease; 
@@ -99,7 +99,7 @@
 
 .dropdown li {
   padding: 0.5em 1rem;
-  width: 9.4rem;
+  width: 10.4rem;
   text-align: center;
 }
 
