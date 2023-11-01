@@ -3,7 +3,45 @@
     width: 100%;
     z-index: -1;
 }
+.quienes-somos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, white,#40a4bc);
+}
 
+.title {
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Aumentamos el ancho para acercar los contenedores a los bordes laterales */
+  height: 50vh;
+  margin-top: 20px;
+}
+
+.left-info, .right-info {
+  width: 48%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px; /* Añadimos un margen para separar los contenedores */
+  margin-left: 0; /* Eliminamos el margen izquierdo para acercar al borde izquierdo */
+  margin-right: 0; /* Eliminamos el margen derecho para acercar al borde derecho */
+}
+
+.left-info {
+  text-align: left;
+}
+
+.right-info {
+  text-align: right;
+}
 .contenedor {
     display: flex;
     justify-content: space-around;
