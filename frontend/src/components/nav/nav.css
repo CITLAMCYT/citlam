@@ -65,7 +65,7 @@
   padding: 0.5rem 0rem;
   position: absolute; 
   display: none;
-  border-radius: 0 0 8px 8px ;
+  border-radius:8px ;
   left: 0;
   width: 10.4rem;
   animation-name: aparecer;

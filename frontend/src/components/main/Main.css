@@ -3,3 +3,54 @@
     width: 100%;
     z-index: -1;
 }
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #40a4bc;
+  }
+  
+  .equipo {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #d6853ffd;
+  }
+  
+  .equipo h2 {
+    margin-bottom: 10px;
+  }
+  
+  .equipo p {
+    font-size: 14px;
+  }
+
+.logo {
+    position: flex;
+    width: 8rem;
+    left: 0;
+}
+
+/* Estilo base del botón */
+.mi-boton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilo cuando se coloca el cursor sobre el botón */
+  .mi-boton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estilo cuando se presiona el botón */
+  .mi-boton:active {
+    background-color: #2074a0;
+  }
+  
