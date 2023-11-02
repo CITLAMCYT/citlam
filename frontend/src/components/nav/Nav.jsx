@@ -13,9 +13,9 @@ const Nav = () => {
         <input type="checkbox" id="checkbox_toggle" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <div class="menu">
-          <li><a href="/">¿Quienes somos?</a></li>
+          <li><a href="#quienes-somos">¿Quienes somos?</a></li>
            <li class="services">
-            <a href="/">Nuestro equipo</a>
+            <a href="#nuestro-equipo">Nuestro equipo</a>
             <ul class="dropdown">
               <li><a href="/">M.M.O</a></li>
               <li><a href="/">Robotica</a></li>

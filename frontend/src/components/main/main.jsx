@@ -13,7 +13,7 @@ const Main = () => {
    <div>
       <img class="img" src={ citlam } alt=''/>
    </div>
-   <div className="quienes-somos-container">
+   <div id="quienes-somos" className="quienes-somos-container">
       <h1 className="title">Quiénes Somos</h1>
       <div className="info-container">
         <div className="left-info">
@@ -25,7 +25,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-   <div class="title-container">
+   <div id="nuestro-equipo" class="title-container">
     <h1 className='title'>Nuestro Equipo</h1>
    </div>
    <div class="card-container"> 
