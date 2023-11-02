@@ -3,14 +3,53 @@
     width: 100%;
     z-index: -1;
 }
+.quienes-somos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, white,#40a4bc);
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    height: 50vh;
+    margin-top: 20px;
+  }
+  
+  .left-info, .right-info {
+    width: 48%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  
+  .left-info {
+    text-align: left;
+  }
+  
+  .right-info {
+    text-align: right;
+  }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    background: #d5853e;
+    min-height: 70vh;
+    background: #40a4bc;
 }
 
 .card {
