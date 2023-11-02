@@ -13,7 +13,7 @@
   }
   
   .title {
-    font-size: 36px;
+    font-size: 3rem;
     margin-top: 0px;
   }
   
@@ -43,13 +43,18 @@
     text-align: right;
   }
 
-.card-container {
+.title-container {
+    text-align: center;
+    background: #40a4bc;
+}
+
+  .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
-    background: #40a4bc;
+    min-height: 80vh;
+    background: linear-gradient(to bottom,#40a4bc, white);
 }
 
 .card {

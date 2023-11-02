@@ -1,7 +1,11 @@
 import React from 'react';
 import './Main.css';
 import citlam from '../../assets/citlam.png';
-import robotica from '../../assets/robotica.jpg';
+import robotica from '../../assets/robotica1.jpg';
+import ciencia from '../../assets/ciencia1.jpg';
+import impresora from '../../assets/impresion.jpg';
+import programacion from '../../assets/informatica.jpg';
+import MMO from '../../assets/MMO.jpg';
 
 const Main = () => {
     return (
@@ -21,10 +25,13 @@ const Main = () => {
         </div>
       </div>
     </div>
-   <div class="card-container">
+   <div class="title-container">
+    <h1 className='title'>Nuestro Equipo</h1>
+   </div>
+   <div class="card-container"> 
     <div class="card">
         <div class="face front">
-            <img class="img" src={ robotica } alt=""/>
+            <img class="img" src={ MMO } alt=""/>
             <h3>MMO</h3>
         </div>
         <div class="face back">
@@ -50,7 +57,7 @@ const Main = () => {
     </div>
     <div class="card">
         <div class="face front">
-        <img class="img" src={ robotica } alt=""/>
+        <img class="img" src={ ciencia } alt=""/>
             <h3>CIENCIA</h3>
         </div>
         <div class="face back">
@@ -63,7 +70,7 @@ const Main = () => {
     </div>
     <div class="card">
         <div class="face front">
-        <img class="img" src={ robotica } alt=""/>
+        <img class="img" src={ programacion } alt=""/>
             <h3>INFORMATICA</h3>
         </div>
         <div class="face back">
@@ -76,7 +83,7 @@ const Main = () => {
     </div>
     <div class="card">
         <div class="face front">
-        <img class="img" src={ robotica } alt=""/>
+        <img class="img" src={ impresora } alt=""/>
             <h3>IMPRESION 3D</h3>
         </div>
         <div class="face back">
