@@ -101,3 +101,10 @@ ul{
     width: 100%;
 }
 }
+
+.patrosinio {
+	position: relative;
+	width: 60%;
+	left: 44vh;
+	top: 10vh;
+}

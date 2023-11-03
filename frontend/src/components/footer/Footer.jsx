@@ -3,6 +3,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-solid-svg-icons';
+import sponsor from '../../assets/sponsor.png';
 
 const Footer = () => {
   return (
@@ -41,6 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <img class="patrosinio" src={ sponsor }/>
       <div className="copyright">
         Derechos Reservados A CITLAM
       </div>
