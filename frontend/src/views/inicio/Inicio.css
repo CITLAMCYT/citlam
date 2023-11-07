@@ -1,25 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
-body {
+.img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.quienes-somos-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: rgb(9, 74, 136);
+    height: 100vh;
+    background: linear-gradient(to bottom, white,#40a4bc);
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    font-size: 20px;
+    height: 20rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .left-info, .right-info {
+    width: 48%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  
+  .left-info {
+    text-align: left;
+  }
+  
+  .right-info {
+    text-align: right;
+  }
+
+.title-container {
+    text-align: center;
+    background: #40a4bc;
 }
 
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#40a4bc, white);
+}
 
 .card {
     position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 20px;
+    width: 16rem;
+    height: 22rem;
+    margin: 0.4rem;
 }
 
 .card .face {
@@ -29,7 +79,7 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 1.5s;
 }
 
 .card .front {

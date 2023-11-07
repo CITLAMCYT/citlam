@@ -1,9 +1,10 @@
-import React from 'react';
-import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faYoutube } from '@fortawesome/free-solid-svg-icons';
-import sponsor from '../../assets/sponsor.png';
+import React from "react";
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-solid-svg-icons";
+import sponsor from "../../assets/sponsor.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,25 +14,46 @@ const Footer = () => {
           <div className="footer-col">
             <h4>CITLAM</h4>
             <ul>
-              <li><a href="/">Sobre Nosotros</a></li>
-              <li><a href="/">Nuestros Servicios</a></li>
-              <li><a href="/">Politica Y Privacidad</a></li>
+              <li>
+                <a href="/">Sobre Nosotros</a>
+              </li>
+              <li>
+                <a href="/">Nuestros Servicios</a>
+              </li>
+              <li>
+                <a href="/">Politica Y Privacidad</a>
+              </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Contactos</h4>
             <ul>
-              <li><a href="mailto:citlamcyt@gmail.com">citlamcyt@gmail.com</a></li>
-              <li><a href="tel:1144410798">11-4441-0798</a></li>
+              <li>
+                <a href="mailto:citlamcyt@gmail.com">citlamcyt@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:1144410798">11-4441-0798</a>
+              </li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Actividades</h4>
             <ul>
-              <li><a href="/">Programación</a></li>
-              <li><a href="/">Impresión 3D</a></li>
-              <li><a href="/">Informática</a></li>
-              <li><a href="/">MMO</a></li>
+              <li>
+                <Link to="/Robotica">Robotica</Link>
+              </li>
+              <li>
+                <Link to="/Impresion">Impresion 3D</Link>
+              </li>
+              <li>
+                <Link to="/Informatica">Informatica</Link>
+              </li>
+              <li>
+                <Link to="/Mmo">MMO</Link>
+              </li>
+              <li>
+                <Link to="/Ciencia">Ciencia</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-col">
@@ -42,10 +64,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img class="patrosinio" src={ sponsor }/>
-      <div className="copyright">
-        Derechos Reservados A CITLAM
-      </div>
+      <img class="patrosinio" src={sponsor} />
+      <div className="copyright">Derechos Reservados A CITLAM</div>
     </footer>
   );
 };

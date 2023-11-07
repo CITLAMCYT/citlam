@@ -1,13 +1,9 @@
 import React from 'react';
-import './Main.css';
-import citlam from '../../assets/citlam.png';
-import robotica from '../../assets/robotica1.jpg';
-import ciencia from '../../assets/ciencia1.jpg';
-import impresora from '../../assets/impresion.jpg';
-import programacion from '../../assets/informatica.jpg';
-import MMO from '../../assets/MMO.jpg';
+import './Inicio.css';
+import { ciencia, MMO, programacion, impresora, robotica, citlam } from '../../assets/index.js';
+import { Link } from 'react-router-dom';
 
-const Main = () => {
+const Inicio = () => {
     return (
  <>
    <div>
@@ -38,7 +34,7 @@ const Main = () => {
             <h3>MMO</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
             <div class="link">
-                <a href="#">Details</a>
+            <Link to="/Mmo">mas info</Link>
             </div>
         </div>
     </div>
@@ -51,7 +47,7 @@ const Main = () => {
             <h3>ROBOTICA</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
             <div class="link">
-                <a href="#">Details</a>
+            <Link to="/Robotica">mas info</Link>
             </div>
         </div>
     </div>
@@ -64,7 +60,7 @@ const Main = () => {
             <h3>CIENCIA</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
             <div class="link">
-                <a href="#">Details</a>
+            <Link to="/Ciencia">mas info</Link>
             </div>
         </div>
     </div>
@@ -77,7 +73,7 @@ const Main = () => {
             <h3>INFORMATICA</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
             <div class="link">
-                <a href="#">Details</a>
+            <Link to="/Informatica">mas info</Link>
             </div>
         </div>
     </div>
@@ -88,9 +84,9 @@ const Main = () => {
         </div>
         <div class="face back">
             <h3>IMPRESION 3D</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+            <p>Lorem ipsum dolor sit, Eius harum molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
             <div class="link">
-                <a href="#">Details</a>
+            <Link to="/Impresion">mas info</Link>
             </div>
         </div>
     </div>
@@ -99,4 +95,4 @@ const Main = () => {
   );
     };
 
-export default Main;
+export default Inicio;
