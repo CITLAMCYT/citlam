@@ -9,51 +9,58 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .quienes-somos-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, white,#40a4bc);
-  }
-  
-  .title {
-    font-size: 3rem;
-    margin-top: 0px;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, white, #40a4bc, white);
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no quepan en una fila */
+  justify-content: center;
+  width: 100%; /* Usar el 100% del ancho del contenedor padre */
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-info, .right-info {
+  width: 100%; /* Ocupar el ancho completo en pantallas pequeñas */
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: left; /* Alinear el texto a la izquierda en todos los tamaños de pantalla */
+}
+
+@media (min-width: 768px) {
+  /* Aplicar estilos específicos para pantallas de al menos 768px de ancho */
   .info-container {
-    display: flex;
     justify-content: space-between;
-    width: 80%; 
-    font-size: 20px;
-    height: 20rem;
-    justify-content: space-between;
-    text-align: center;
   }
-  
+
   .left-info, .right-info {
     width: 48%;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px; 
-    margin-left: 0; 
-    margin-right: 0; 
-  }
-  
-  .left-info {
     text-align: left;
   }
-  
+
   .right-info {
     text-align: right;
   }
-
+}
 .title-container {
     text-align: center;
-    background: #40a4bc;
+    background: white;
 }
 
   .card-container {
@@ -62,7 +69,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom,#40a4bc, white);
+    background: linear-gradient(to bottom, white 5%, #40a4bc, white 95%);
 }
 
 .card {
