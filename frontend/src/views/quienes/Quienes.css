@@ -1,229 +1,38 @@
-/*Propiedades generales para los headings y los parrafos de la página*/
 
-h2 {
-    color: var(--color-naranja-claro);
-    font-size: 2rem;
-}
-
-h3, h4 {
-    color: var(--color-naranja-claro);
-    font-size: 1.6rem;
-}
-
-p {
-    color: var(--color-negro);
-    font-size: 1.7rem;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-}
-
-.titulo {
-    text-align: center;
-    padding: 4rem;
-}
-
-.titulo__title {
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--color-negro);
-}
-
-/*Propiedades de las 3 secciones principales de la página*/
-
-.mision-valores,
-.historia,
-.identidad {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--color-blanco);
-    padding: 2rem 0;
-}
-
-.mision-valores {
-    padding-top: 3rem;
-}
-
-.identidad {
-    padding-bottom: 3rem;
-}
-
-/*Todas las propiedades del botón que posibilita abrir las secciones*/
-
-.show-button {
-    display: flex;
-    width: 110rem;
-    height: 7rem;
-    background: var(--color-fondo);
-
-    border-radius: 20px;
-
-    justify-content: flex-start;
-    align-items: center;
-    transition: 0.5s background 0s;
-}
-
-.show-button:hover {
-    background: var(--color-gris-e);
+.acordeon-container {
+    max-width: 60rem;
+    margin:  auto;
+    margin-top: 2rem;
+  }
+  
+  .acordeon {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc7e;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .acordeon-title {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
     cursor: pointer;
-}
-
-.icon {
-    margin: 3rem;
-    font-size: 2.3rem;
-    color: var(--color-naranja-oscuro-alt);
-    transition: font-size 0.5s;
-
-    transform: rotate(90deg);
-    transition: transform 0.4s;
-}
-
-.show-button:hover > .icon {
-    font-size: 2.5rem;
-}
-
-.mision-valores__show-button--active,
-.historia__show-button--active,
-.identidad__show-button--active {
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 0;
-}
-
-.mision-valores__container,
-.historia__container,
-.identidad__container {
-    display: flex;
-    width: 110rem;
-    height: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .acordeon-content {
+    font-size: 16px;
+    color: #666;
+    padding: 10px; /* Cambié el valor del padding para que sea más razonable */
     overflow: hidden;
-    background: var(--color-gris-e);
-    border-radius: 0 0 20px 20px;
-    transition: height 1s;
-}
-
-.mision-valores__container--show,
-.historia__container--show,
-.identidad__container--show {
-    height: auto;
-}
-
-/*Todas las propiedades de la sección de misión y valores*/
-
-.mision-valores__text-container {
-    margin: 3rem;
-}
-
-.mision-valores__text {
-    margin: 1.3rem 0 3rem 0; 
-}
-
-/*Todas las propiedades de la sección de historia*/
-
-.historia__text-container {
-    margin: 3rem;
-}
-
-.historia__text {
-    margin: 1.3rem 0 3rem 0; 
-}
-
-/*Todas las propiedades del slider de fotos*/
-
-.slider {
-    width: 300%;
-    height: 20rem;
-    margin: 3rem;
-}
-
-.slider__container {
-    width: 500%;
-}
-
-/*Todas las propiedades de la sección de identidad*/
-
-.identidad__text {
-    margin: 4.3rem 3rem 6rem 3rem; 
-}
-
-
-
-
-
-
-/*Media queries*/
-
-@media screen and (max-width: 1140px) {
-
-    .show-button,
-    .mision-valores__container,
-    .historia__container,
-    .identidad__container {
-        width: 90%;
-    }
-
-    .historia__container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .slider {
-        width: 50%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 860px) {
-
-    p {
-        line-height: 1.5;
-    }
-
-    .mision-valores__container{
-        flex-wrap: wrap;
-    }
-
-    .footer {
-        min-height: 35vh;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-
-    .slider {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-
-    .slider {
-        width: 80%;
-        height: 25rem;
-    }
-    
-}
-
-@media screen and (min-height: 800px) {
-
-    .mision-valores {
-        padding-top: 9vh;
-    }
-    
-    .identidad {
-        padding-bottom: 9vh;
-    }
-    
-}
-
-@media screen and (min-height: 1000px) {
-
-    .mision-valores {
-        padding-top: 13vh;
-    }
-    
-    .identidad {
-        padding-bottom: 13vh;
-    }
-    
-}
+    transition: max-height 1s ease-in-out; /* Aumenté la duración de la transición */
+  }
+  
+  .acordeon.open .acordeon-content {
+    max-height: 1000px; /* Un valor grande para asegurarse de que el contenido se muestre completamente */
+  }
+  
+  
+  

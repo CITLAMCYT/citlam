@@ -15,7 +15,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      <div>
         <header>
           <Nav />
         </header>
@@ -33,7 +32,6 @@ const App = () => {
         <footer>
           <Footer />
         </footer>
-      </div>
     </Router>
   );
 };
