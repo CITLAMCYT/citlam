@@ -1,6 +1,6 @@
 import React from 'react';
 import './Inicio.css';
-import { ciencia, MMO, programacion, impresora, robotica, citlam } from '../../assets/index.js';
+import { ciencia, MMO, programacion, impresora, robotica, citlam } from './assets/index.js';
 import { Link } from 'react-router-dom';
 
 const Inicio = () => {

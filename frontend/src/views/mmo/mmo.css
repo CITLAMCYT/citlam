@@ -1,12 +1,12 @@
-.fondo_cien {
-    background-color: #cfffcaaf;
+.fondo_mmo {
+    background-color: #fdfd96;
 }
-.date__container_cien {
+.date__container_mmo {
     font-weight: bold;
     text-align: center;
     padding: 1.5rem;
     font-size: 1.7rem;
-    background: linear-gradient(to bottom, #77dd77ab 90%, #cfffca );
+    background: linear-gradient(to bottom, #f4c711d8 90%, #ffff81);
     color: white;
   }
   

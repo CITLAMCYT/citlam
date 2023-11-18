@@ -9,6 +9,7 @@ import {
   Mmo,
   Informatica,
   Quienes,
+  Eventos,
 } from "./views/index.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Inicio />} />
+            <Route path="/Eventos" element={<Eventos />} />
             <Route path="/Quienessomos" element={<Quienes />} />
             <Route path="/Ciencia" element={<Ciencia />} />
             <Route path="/Robotica" element={<Robotica />} />
