@@ -1,38 +1,64 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-.acordeon-container {
-    max-width: 60rem;
-    margin:  auto;
-    margin-top: 2rem;
-  }
-  
-  .acordeon {
-    background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc7e;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  .acordeon-title {
-    font-size: 18px;
-    color: #333;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #f9f9f9;
-  }
-  
-  .acordeon-content {
-    font-size: 16px;
-    color: #666;
-    padding: 10px; /* Cambié el valor del padding para que sea más razonable */
-    overflow: hidden;
-    transition: max-height 1s ease-in-out; /* Aumenté la duración de la transición */
-  }
-  
-  .acordeon.open .acordeon-content {
-    max-height: 1000px; /* Un valor grande para asegurarse de que el contenido se muestre completamente */
-  }
-  
-  
-  
+.container2 {
+  /* Puedes ajustar el espaciado inferior según tus necesidades */
+  margin-bottom: 20px;
+}
+
+.container1 {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.wrapper1 {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+}
+
+.toggle,
+.content1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: background-color 0.3s; /* Agregado: Efecto de transición al fondo */
+}
+
+.toggle:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.content1 {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+  overflow: hidden;
+  transition: max-height 0.5s; /* Agregado: Efecto de transición a la altura máxima */
+}
+
+/* Clase adicional para mostrar el contenido cuando está activo */
+.content1.active {
+  max-height: 1000px; /* Ajusta la altura máxima según sea necesario */
+}
