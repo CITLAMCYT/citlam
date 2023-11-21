@@ -1,17 +1,18 @@
 import React from 'react';
-import './Ciencia.css';
-import { Logo, Lugar1 } from './assets/index.js'
+import './eventos.css';
+import { Plaza, Fiti, Logos } from './assets/index.js'
 
-
-const Ciencia = () => {
+const Eventos = () => {
     return (
-   <div class="fondo_cien"> 
-      <section class="activities__monday">
-      <div class="date__container_cien">Ciencia</div>
+    <div class="fondo_eve">
+      <div class="logos_container">
+        <img src={ Logos }/>
+
+      </div>
       <div class="activities__container">
         <div class="activity__container">
           <img
-            src={ Logo }
+            src={ Plaza }
             alt="Logo de Actividades"
             class="activity__logo"
           />
@@ -33,7 +34,7 @@ const Ciencia = () => {
         </div>
         <div class="activity__container activity__reverse">
           <img
-            src={ Lugar1 }
+            src={ Fiti }
             alt="Logo de Actividades"
             class="activity__logo"
           />
@@ -53,10 +54,9 @@ const Ciencia = () => {
             </p>
           </div>
         </div>
-      </div>
-     </section>
+        </div>
     </div>
   );
 };
 
-export default Ciencia;
+export default Eventos;

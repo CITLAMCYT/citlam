@@ -1,12 +1,12 @@
-.fondo_cien {
-    background-color: #cfffcaaf;
+.fondo_impre {
+    background-color: #ffbfb0;
 }
-.date__container_cien {
+.date__container_impre {
     font-weight: bold;
     text-align: center;
     padding: 1.5rem;
     font-size: 1.7rem;
-    background: linear-gradient(to bottom, #77dd77ab 90%, #cfffca );
+    background: linear-gradient(to bottom, #e2504c 90%, #ffbfb0);
     color: white;
   }
   

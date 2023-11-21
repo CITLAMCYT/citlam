@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, white, #40a4bc, white);
+  background: linear-gradient(to bottom, white, #40a4bc 50%, white 100%);
   padding: 20px;
 }
 
@@ -26,25 +26,25 @@
 
 .info-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no quepan en una fila */
+  flex-wrap: wrap; 
   justify-content: center;
-  width: 100%; /* Usar el 100% del ancho del contenedor padre */
+  width: 100%; 
   font-size: 20px;
   padding: 20px;
   text-align: center;
 }
 
 .left-info, .right-info {
-  width: 100%; /* Ocupar el ancho completo en pantallas pequeñas */
+  width: 100%; 
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
-  text-align: left; /* Alinear el texto a la izquierda en todos los tamaños de pantalla */
+  text-align: left; 
 }
 
 @media (min-width: 768px) {
-  /* Aplicar estilos específicos para pantallas de al menos 768px de ancho */
+  
   .info-container {
     justify-content: space-between;
   }

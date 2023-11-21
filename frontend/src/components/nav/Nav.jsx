@@ -42,7 +42,7 @@ const Nav = () => {
               </ul>
             </li>
             <li>
-              <a href="/">Eventos</a>
+              <Link to="/Eventos">Eventos</Link>
             </li>
             <li>
               <a href="/">Contacto</a>

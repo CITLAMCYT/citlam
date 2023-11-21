@@ -1,0 +1,102 @@
+.fondo_eve {
+background-color: rgb(203, 248, 233);
+display: block;
+}
+.logos_container {
+  text-align: center;
+  
+}
+
+.plaza_logo {
+  margin: 0 10px 10px 0;
+}
+
+.activity__container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.activity__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d6863e;
+}
+
+.activity__description {
+  color: black;
+}
+
+.activity__logo {
+  width: 20rem;
+}
+
+
+.activity__reverse {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 600px) {
+  .date__container {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .activity__container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .activity__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .activity__description {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .activity__logo {
+    width: 20rem;
+  }
+
+  .activity__timetable {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .activity__reverse {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .date__container {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  .activity__container {
+    padding: 1rem 3rem;
+  }
+
+  .activity__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .activity__description {
+    font-size: 1rem;
+  }
+
+  .activity__logo {
+    width: 18rem;
+  }
+
+  .activity__timetable {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+  }
+}
